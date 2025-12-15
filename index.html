@@ -73,7 +73,7 @@
         }
         
         .logo {
-            height: 60px;
+            height: 105px;
             width: auto;
         }
         
@@ -261,6 +261,27 @@
             line-height: 1.1;
             font-family: 'Outfit', sans-serif;
             text-transform: uppercase;
+        }
+        
+        .section-header-with-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .section-header-with-logo .section-title {
+            margin-bottom: 0;
+            order: 2;
+        }
+        
+        .section-logo {
+            height: 80px;
+            width: auto;
+            opacity: 0.9;
+            order: 1;
         }
         
         .stats-grid {
@@ -845,6 +866,24 @@
             .stat-number {
                 font-size: 2rem;
             }
+            
+            .section-header-with-logo {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .section-header-with-logo .section-title {
+                order: 2;
+            }
+            
+            .section-logo {
+                height: 60px;
+                order: 1;
+            }
+            
+            .logo {
+                height: 70px;
+            }
         }
     </style>
 </head>
@@ -904,7 +943,10 @@
     <!-- Why Choose Us - Data Backed -->
     <section class="why-choose-us">
         <div class="section-container">
-            <h2 class="section-title">Why Connecticut Chooses Menelick Epoxy Floor Company</h2>
+            <div class="section-header-with-logo">
+                <h2 class="section-title">Why Connecticut Chooses Menelick Epoxy Floor Company</h2>
+                <img src="MenelickLogo1.png" alt="Menelick Epoxy Logo" class="section-logo">
+            </div>
             
             <div class="stats-grid">
                 <div class="stat-card">
@@ -947,7 +989,10 @@
     <!-- Services Overview -->
     <section class="services-overview">
         <div class="section-container">
-            <h2 class="section-title">Our Epoxy Flooring Services</h2>
+            <div class="section-header-with-logo">
+                <h2 class="section-title">Our Epoxy Flooring Services</h2>
+                <img src="MenelickLogo1.png" alt="Menelick Epoxy Logo" class="section-logo">
+            </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">🏠</div>
@@ -1003,7 +1048,10 @@
     <!-- Service Area -->
     <section class="service-area">
         <div class="section-container">
-            <h2>Proudly Serving All of Connecticut</h2>
+            <div class="section-header-with-logo">
+                <h2>Proudly Serving All of Connecticut</h2>
+                <img src="MenelickLogo1.png" alt="Menelick Epoxy Logo" class="section-logo">
+            </div>
             <p>We bring premium epoxy flooring solutions to homes and businesses throughout Connecticut. As a Connecticut-licensed contractor, we understand local building codes and climate requirements.</p>
             <div class="locations">
                 <span class="location-badge">Bridgeport</span>
