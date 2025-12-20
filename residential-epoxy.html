@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional residential epoxy flooring in Connecticut. Garage floors, basements, patios & interior floors. Licensed installer. Free estimates. 20+ year lifespan guaranteed.">
+    <meta name="keywords" content="residential epoxy flooring Connecticut, garage floor epoxy CT, basement epoxy flooring, patio epoxy coating, interior epoxy floors, home epoxy installation">
+    <meta name="author" content="Menelik Epoxy Floor Coating, LLC">
+    <meta property="og:title" content="Residential Epoxy Flooring CT | Garage, Basement & Home Floors">
+    <meta property="og:description" content="Transform your home with professional epoxy flooring. Garage, basement, patio & interior floors. Connecticut's trusted installer since [year].">
+    <meta property="og:type" content="website">
+    <title>Residential Epoxy Flooring Connecticut | Garage & Basement Floors</title>
+    
+    <!-- Grift Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #1a1a1a;
+            --accent-color: #333333;
+            --highlight-color: #ffffff;
+            --light-bg: #f8f8f8;
+            --text-dark: #000000;
+            --text-light: #ffffff;
+            --border-color: #e0e0e0;
+            --fluorescent-green: #00ff41;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            font-size: 16px;
+        }
+        
+        /* Navigation */
+        nav {
+            background: var(--primary-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo {
+            height: 105px;
+            width: auto;
+        }
+        
+        .company-name {
+            color: var(--text-light);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--highlight-color);
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1.1;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            padding: 14px 32px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s;
+            font-weight: 600;
+            display: inline-block;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+        }
+        
+        .btn-primary {
+            background: var(--fluorescent-green);
+            color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background: #00e639;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 255, 65, 0.5);
+        }
+        
+        /* Content Sections */
+        .content-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            font-weight: 900;
+            letter-spacing: -1.5px;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+        }
+        
+        .section-subtitle {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        /* Service Cards */
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .service-item {
+            background: white;
+            padding: 2rem;
+            border-left: 4px solid var(--primary-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .service-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+        }
+        
+        .service-item ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .service-item li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .service-item li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        /* Benefits Section */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .benefit-card {
+            background: var(--light-bg);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .benefit-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        /* Image Placeholder */
+        .image-placeholder {
+            width: 100%;
+            height: 400px;
+            background: var(--light-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            margin: 2rem 0;
+            border: 2px dashed var(--border-color);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: var(--primary-color);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--text-light);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--fluorescent-green);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.25rem;
+            }
+            
+            .section-title {
+                font-size: 1.75rem;
+            }
+            
+            .logo {
+                height: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="MenelikLogo1.png" alt="Menelik Epoxy Floor Coating Logo" class="logo">
+                <span class="company-name">Menelik Epoxy</span>
+            </div>
+            <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Residential Epoxy Flooring Connecticut</h1>
+        <p>Transform Your Home with Beautiful, Durable Epoxy Floor Coatings</p>
+        <a href="index.html#contact" class="btn btn-primary">Get Free Estimate</a>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-section">
+        <h2 class="section-title">Professional Epoxy Flooring for Connecticut Homes</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+            Menelik Epoxy Floor Coating brings over [X] years of experience transforming Connecticut homes with premium epoxy floor coatings. Our residential epoxy flooring services provide homeowners with durable, beautiful, and easy-to-maintain floors that last 20+ years. From garage floors to basement renovations, we deliver professional installation backed by our lifetime support guarantee.
+        </p>
+
+        <!-- Image Placeholder -->
+        <div class="image-placeholder">
+            Add Image: residential-garage-before-after.jpg (1200x600px)
+        </div>
+
+        <!-- Residential Services Grid -->
+        <h2 class="section-title" style="margin-top: 4rem;">Our Residential Epoxy Services</h2>
+        
+        <div class="service-grid">
+            <div class="service-item">
+                <h3>🏠 Garage Floor Epoxy</h3>
+                <p style="margin-bottom: 1rem;">The most popular residential epoxy service in Connecticut. Transform your garage into a showroom.</p>
+                <ul>
+                    <li>Chemical & oil resistant coating</li>
+                    <li>Custom color & flake options</li>
+                    <li>Non-slip surface finish</li>
+                    <li>UV-stable formulation</li>
+                    <li>1-2 day installation</li>
+                    <li>Easy to clean & maintain</li>
+                </ul>
+                <div class="image-placeholder" style="height: 200px; margin-top: 1rem;">
+                    garage-epoxy-1.jpg
+                </div>
+            </div>
+
+            <div class="service-item">
+                <h3>🏠 Basement Epoxy Flooring</h3>
+                <p style="margin-bottom: 1rem;">Turn your unfinished basement into a beautiful, moisture-resistant living space.</p>
+                <ul>
+                    <li>100% moisture barrier</li>
+                    <li>Crack & stain resistant</li>
+                    <li>Bright, reflective finish</li>
+                    <li>Mold & mildew resistant</li>
+                    <li>Temperature tolerant</li>
+                    <li>Long-lasting durability</li>
+                </ul>
+                <div class="image-placeholder" style="height: 200px; margin-top: 1rem;">
+                    basement-epoxy-1.jpg
+                </div>
+            </div>
+
+            <div class="service-item">
+                <h3>🏠 Patio & Porch Coatings</h3>
+                <p style="margin-bottom: 1rem;">Protect and beautify outdoor concrete surfaces with weather-resistant coatings.</p>
+                <ul>
+                    <li>UV & weather resistant</li>
+                    <li>Slip-resistant texture</li>
+                    <li>Waterproof protection</li>
+                    <li>Fade-resistant colors</li>
+                    <li>Hot & cold tolerant</li>
+                    <li>Easy snow removal</li>
+                </ul>
+                <div class="image-placeholder" style="height: 200px; margin-top: 1rem;">
+                    patio-epoxy-1.jpg
+                </div>
+            </div>
+
+            <div class="service-item">
+                <h3>🏠 Interior Floor Coatings</h3>
+                <p style="margin-bottom: 1rem;">Modern, seamless epoxy floors for kitchens, laundry rooms, and living spaces.</p>
+                <ul>
+                    <li>Seamless, modern finish</li>
+                    <li>Custom color matching</li>
+                    <li>Hygienic & easy to clean</li>
+                    <li>Pet & kid friendly</li>
+                    <li>Scratch resistant</li>
+                    <li>Designer aesthetics</li>
+                </ul>
+                <div class="image-placeholder" style="height: 200px; margin-top: 1rem;">
+                    interior-epoxy-1.jpg
+                </div>
+            </div>
+        </div>
+
+        <!-- Benefits Section -->
+        <h2 class="section-title" style="margin-top: 4rem;">Why Choose Epoxy for Your Connecticut Home?</h2>
+        
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">⏱️</div>
+                <h3>Lasts 20+ Years</h3>
+                <p>Professional epoxy floors outlast traditional floor paint by 400%, providing decades of protection.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">💧</div>
+                <h3>100% Waterproof</h3>
+                <p>Complete moisture barrier protects against water damage, perfect for Connecticut's humid climate.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">🧹</div>
+                <h3>Easy to Clean</h3>
+                <p>Non-porous surface resists stains. Simply sweep and mop for a spotless floor.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">🔬</div>
+                <h3>Chemical Resistant</h3>
+                <p>Withstands oil, gasoline, antifreeze, and household cleaners without staining.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">💰</div>
+                <h3>Increases Home Value</h3>
+                <p>Beautiful epoxy floors are a selling point that can increase your home's market value.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">🎨</div>
+                <h3>Unlimited Design Options</h3>
+                <p>Choose from solid colors, decorative flakes, metallic finishes, and custom designs.</p>
+            </div>
+        </div>
+
+        <!-- Process Section -->
+        <h2 class="section-title" style="margin-top: 4rem;">Our Residential Installation Process</h2>
+        
+        <div style="background: var(--light-bg); padding: 2rem; margin: 2rem 0;">
+            <h3 class="section-subtitle">Step 1: Free Consultation & Estimate</h3>
+            <p>We visit your Connecticut home, assess your floors, discuss your goals, and provide a detailed written estimate with no obligations.</p>
+        </div>
+
+        <div style="background: white; padding: 2rem; margin: 2rem 0; border-left: 4px solid var(--primary-color);">
+            <h3 class="section-subtitle">Step 2: Surface Preparation</h3>
+            <p>We diamond-grind your concrete to create the perfect bonding surface, repair cracks, and ensure proper adhesion for long-lasting results.</p>
+        </div>
+
+        <div style="background: var(--light-bg); padding: 2rem; margin: 2rem 0;">
+            <h3 class="section-subtitle">Step 3: Professional Application</h3>
+            <p>Our certified installers apply premium epoxy coatings using proven techniques. We add decorative flakes, colors, or metallic effects per your design.</p>
+        </div>
+
+        <div style="background: white; padding: 2rem; margin: 2rem 0; border-left: 4px solid var(--primary-color);">
+            <h3 class="section-subtitle">Step 4: Protective Top Coat</h3>
+            <p>We apply a durable polyurethane or polyaspartic top coat for UV protection, enhanced durability, and a beautiful glossy finish.</p>
+        </div>
+
+        <div style="background: var(--light-bg); padding: 2rem; margin: 2rem 0;">
+            <h3 class="section-subtitle">Step 5: Final Inspection & Care Instructions</h3>
+            <p>We walk you through your new floor, provide maintenance instructions, and ensure you're 100% satisfied with the results.</p>
+        </div>
+
+        <!-- FAQ Section -->
+        <h2 class="section-title" style="margin-top: 4rem;">Residential Epoxy FAQ</h2>
+        
+        <div style="margin: 2rem 0;">
+            <h3 class="section-subtitle">How much does residential epoxy flooring cost in Connecticut?</h3>
+            <p style="margin-bottom: 2rem;">Residential epoxy flooring typically costs $3-8 per square foot depending on the coating system, surface preparation needs, and design complexity. Garage floors average $1,500-3,500 for a standard 2-car garage. We provide free detailed estimates for all Connecticut homeowners.</p>
+
+            <h3 class="section-subtitle">How long does epoxy flooring last in a home?</h3>
+            <p style="margin-bottom: 2rem;">Professional epoxy floors last 20+ years with proper maintenance. This is 400% longer than garage floor paint which typically lasts 3-5 years. Our installations are backed by our lifetime support guarantee.</p>
+
+            <h3 class="section-subtitle">Is epoxy flooring safe for indoor use?</h3>
+            <p style="margin-bottom: 2rem;">Yes! Once cured, epoxy floors are completely safe, non-toxic, and emit zero VOCs. They're perfect for basements, kitchens, laundry rooms, and living spaces. We use low-VOC formulations during installation.</p>
+
+            <h3 class="section-subtitle">Can epoxy be applied over existing floors?</h3>
+            <p style="margin-bottom: 2rem;">Epoxy can be applied over concrete, but we must first remove any existing coatings, sealers, or paint. We diamond-grind the surface to ensure proper adhesion. Old tile or vinyl must be removed first.</p>
+
+            <h3 class="section-subtitle">How long before I can use my floor after installation?</h3>
+            <p style="margin-bottom: 2rem;">You can walk on epoxy floors after 24 hours. For vehicle traffic (garages), we recommend waiting 72 hours. Full cure takes 7 days, after which your floor reaches maximum durability and chemical resistance.</p>
+
+            <h3 class="section-subtitle">Does epoxy flooring work in Connecticut winters?</h3>
+            <p style="margin-bottom: 2rem;">Absolutely! Epoxy is highly temperature tolerant and performs excellently in Connecticut's freeze-thaw cycles. It won't crack from temperature changes and makes snow removal easier with its smooth, durable surface.</p>
+        </div>
+
+        <!-- Service Area -->
+        <h2 class="section-title" style="margin-top: 4rem;">Serving Connecticut Homeowners</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+            Menelik Epoxy Floor Coating proudly serves residential customers throughout Connecticut, including Bridgeport, Hartford, New Haven, Stamford, Waterbury, Norwalk, Danbury, Greenwich, and all surrounding communities. As a Connecticut-licensed contractor, we understand local building codes and climate requirements.
+        </p>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Ready to Transform Your Home?</h2>
+        <p>Get a free consultation and detailed estimate for your Connecticut residential epoxy flooring project.</p>
+        <a href="index.html#contact" class="btn btn-primary">Request Free Estimate</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Menelik Epoxy Floor Coating, LLC | Licensed & Insured in Connecticut</p>
+        <p>Phone: <a href="tel:203-449-8607">(203) 449-8607</a></p>
+        <p style="margin-top: 1rem;"><a href="index.html">Home</a> | <a href="index.html#contact">Contact</a> | <a href="services.html">All Services</a></p>
+        <p style="margin-top: 1rem;">&copy; 2024 Menelik Epoxy Floor Coating, LLC. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
