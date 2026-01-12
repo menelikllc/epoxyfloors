@@ -1,0 +1,16 @@
+# Menelik Epoxy Floor Coating - Robots.txt
+# https://menylikepoxyfloors.com
+
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://menylikepoxyfloors.com/sitemap.xml
+
+# Crawl Delay (optional - helps prevent server overload)
+Crawl-delay: 10
+
+# Disallow common paths (if you have any admin or testing pages)
+# Disallow: /admin/
+# Disallow: /test/
+# Disallow: /temp/
